@@ -51,6 +51,7 @@ jobs:
               with:
                   php-version: ${{ matrix.php }}
                   extensions: dom, curl, libxml, mbstring, zip, pcntl, intl, gd, exif, iconv
+                  ini-values: error_reporting=E_ALL, display_errors=On
                   coverage: none
 
             - name: Setup environment for phpBB
